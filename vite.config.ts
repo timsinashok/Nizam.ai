@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => {
       server: {
         port: 3000,
         host: '0.0.0.0',
+        allowedHosts: [
+          'nizam-ai.onrender.com',
+          '.onrender.com', // Allow all Render.com subdomains
+        ],
       },
       plugins: [react()],
       define: {
